@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Sparkles, TrendingUp, Zap } from "lucide-react";
+import TrustedBy from "./TrustedBy";
 
 interface HeroProps {
   onGetStarted: () => void;
@@ -75,7 +76,7 @@ export default function Hero({ onGetStarted }: HeroProps) {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-6">
+            <div className="grid grid-cols-3 gap-6 mb-8">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -101,6 +102,9 @@ export default function Hero({ onGetStarted }: HeroProps) {
                 <div className="text-sm text-gray-400">Success Rate</div>
               </motion.div>
             </div>
+
+            {/* Trusted By Athletes */}
+            <TrustedBy />
           </motion.div>
 
           {/* Right Content - Floating Card */}
