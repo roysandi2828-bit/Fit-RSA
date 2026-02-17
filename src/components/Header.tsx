@@ -3,7 +3,11 @@
 import { motion } from "framer-motion";
 import { Dumbbell } from "lucide-react";
 
-export default function Header() {
+interface HeaderProps {
+  onGetStarted: () => void;
+}
+
+export default function Header({ onGetStarted }: HeaderProps) {
   return (
     <motion.header
       initial={{ y: -100, opacity: 0 }}
@@ -44,6 +48,7 @@ export default function Header() {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            onClick={onGetStarted}
             className="hidden md:block bg-[#FF6B35] hover:bg-[#FF8C42] text-white font-semibold px-6 py-3 rounded-full transition-all duration-300"
           >
             Get Started

@@ -64,6 +64,10 @@ export default function Hero({ onGetStarted }: HeroProps) {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                onClick={() => {
+                  const featuresSection = document.getElementById('features');
+                  featuresSection?.scrollIntoView({ behavior: 'smooth' });
+                }}
                 className="btn-secondary"
               >
                 Learn More

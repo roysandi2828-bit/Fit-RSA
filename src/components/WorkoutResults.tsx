@@ -11,6 +11,73 @@ interface WorkoutResultsProps {
 }
 
 export default function WorkoutResults({ userData, workoutPlan, onRegenerate }: WorkoutResultsProps) {
+  const handleDownloadPDF = () => {
+    // Create a simple text version of the workout plan
+    const content = `
+PERSONALIZED WORKOUT PLAN
+========================
+
+PROFILE
+-------
+BMI: ${workoutPlan.bmi} (${workoutPlan.bmiCategory})
+Goal: ${userData.fitnessGoal}
+Level: ${userData.experienceLevel}
+Frequency: ${userData.workoutDays}x per week
+Target Areas: ${userData.targetAreas.join(', ')}
+
+STRENGTH ROUTINE
+----------------
+${workoutPlan.strengthRoutine.map((ex, i) => `${i + 1}. ${ex.name}
+   Sets: ${ex.sets} | Reps: ${ex.reps} | Rest: ${ex.rest}`).join('\n')}
+
+CARDIO ROUTINE
+--------------
+${workoutPlan.cardioRoutine.map((ex, i) => `${i + 1}. ${ex.name}
+   Sets: ${ex.sets} | Duration: ${ex.reps} | Rest: ${ex.rest}`).join('\n')}
+
+TRAINER NOTES
+-------------
+Nutrition: ${workoutPlan.trainerNotes.nutrition}
+Recovery: ${workoutPlan.trainerNotes.recovery}
+Progression: ${workoutPlan.trainerNotes.progression}
+    `.trim();
+
+    // Create a blob and download
+    const blob = new Blob([content], { type: 'text/plain' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'workout-plan.txt';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  };
+
+  const handleShare = async () => {
+    const shareText = `Check out my personalized workout plan! 💪\n\nGoal: ${userData.fitnessGoal}\nLevel: ${userData.experienceLevel}\nFrequency: ${userData.workoutDays}x per week`;
+    
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: 'My Workout Plan',
+          text: shareText,
+        });
+      } catch (err) {
+        // User cancelled or error occurred
+        console.log('Share cancelled');
+      }
+    } else {
+      // Fallback: copy to clipboard
+      try {
+        await navigator.clipboard.writeText(shareText);
+        alert('Workout plan details copied to clipboard!');
+      } catch (err) {
+        alert('Unable to share. Please try again.');
+      }
+    }
+  };
+
   return (
     <div className="min-h-screen py-20 px-4">
       <div className="max-w-7xl mx-auto">
@@ -231,6 +298,7 @@ export default function WorkoutResults({ userData, workoutPlan, onRegenerate }: 
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            onClick={handleDownloadPDF}
             className="btn-secondary flex items-center justify-center gap-2"
           >
             <Download className="w-5 h-5" />
@@ -239,6 +307,7 @@ export default function WorkoutResults({ userData, workoutPlan, onRegenerate }: 
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            onClick={handleShare}
             className="btn-secondary flex items-center justify-center gap-2"
           >
             <Share2 className="w-5 h-5" />
