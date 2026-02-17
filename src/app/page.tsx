@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Header from "@/components/Header";
+import TrustedBy from "@/components/TrustedBy";
 import Hero from "@/components/Hero";
 import Features from "@/components/Features";
 import WorkoutTypes from "@/components/WorkoutTypes";
@@ -54,6 +55,7 @@ export default function Home() {
       
       {currentView === "landing" && (
         <>
+          <TrustedBy />
           <Hero onGetStarted={handleGetStarted} />
           <Features />
           <WorkoutTypes />
