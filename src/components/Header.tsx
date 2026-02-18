@@ -19,27 +19,27 @@ export default function Header({ onGetStarted }: HeaderProps) {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="bg-gradient-to-br from-[#FF6B35] to-[#FF8C42] p-2 rounded-xl">
+            <div className="bg-gradient-to-br from-[#ff3535] to-[#FF8C42] p-2 rounded-xl">
               <Dumbbell className="w-6 h-6 text-white" />
             </div>
             <div>
-              <h1 className="text-2xl font-bold gradient-text">Fit-R.S.A</h1>
+              <h1 className="text-2xl font-bold gradient-text">Fit-RSA</h1>
               <p className="text-xs text-gray-400">Personal Workout Generator</p>
             </div>
           </div>
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center gap-8">
-            <a href="#home" className="text-gray-300 hover:text-[#FF6B35] transition-colors">
+            <a href="#home" className="text-gray-300 hover:text-[#ff3535] transition-colors">
               Home
             </a>
-            <a href="#features" className="text-gray-300 hover:text-[#FF6B35] transition-colors">
+            <a href="#features" className="text-gray-300 hover:text-[#ff3535] transition-colors">
               Features
             </a>
-            <a href="#trainers" className="text-gray-300 hover:text-[#FF6B35] transition-colors">
+            <a href="#trainers" className="text-gray-300 hover:text-[#ff3535] transition-colors">
               Trainers
             </a>
-            <a href="#about" className="text-gray-300 hover:text-[#FF6B35] transition-colors">
+            <a href="#about" className="text-gray-300 hover:text-[#ff3535] transition-colors">
               About
             </a>
           </nav>
@@ -49,7 +49,7 @@ export default function Header({ onGetStarted }: HeaderProps) {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={onGetStarted}
-            className="hidden md:block bg-[#FF6B35] hover:bg-[#FF8C42] text-white font-semibold px-6 py-3 rounded-full transition-all duration-300"
+            className="hidden md:block bg-[#ff3535] hover:bg-[#FF8C42] text-white font-semibold px-6 py-3 rounded-full transition-all duration-300"
           >
             Get Started
           </motion.button>

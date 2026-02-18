@@ -104,7 +104,7 @@ Progression: ${workoutPlan.trainerNotes.progression}
           className="glass-card p-6 rounded-2xl mb-8"
         >
           <div className="flex items-center gap-3 mb-6">
-            <div className="bg-gradient-to-br from-[#FF6B35] to-[#FF8C42] p-3 rounded-xl">
+            <div className="bg-gradient-to-br from-[#ff3535] to-[#FF8C42] p-3 rounded-xl">
               <User className="w-6 h-6 text-white" />
             </div>
             <h2 className="text-2xl font-bold">Your Profile</h2>
@@ -178,15 +178,15 @@ Progression: ${workoutPlan.trainerNotes.progression}
                   <div className="grid grid-cols-3 gap-4 text-sm">
                     <div>
                       <div className="text-gray-400">Sets</div>
-                      <div className="font-semibold text-[#FF6B35]">{exercise.sets}</div>
+                      <div className="font-semibold text-[#ff3535]">{exercise.sets}</div>
                     </div>
                     <div>
                       <div className="text-gray-400">Reps</div>
-                      <div className="font-semibold text-[#FF6B35]">{exercise.reps}</div>
+                      <div className="font-semibold text-[#ff3535]">{exercise.reps}</div>
                     </div>
                     <div>
                       <div className="text-gray-400">Rest</div>
-                      <div className="font-semibold text-[#FF6B35]">{exercise.rest}</div>
+                      <div className="font-semibold text-[#ff3535]">{exercise.rest}</div>
                     </div>
                   </div>
                 </motion.div>
@@ -226,15 +226,15 @@ Progression: ${workoutPlan.trainerNotes.progression}
                   <div className="grid grid-cols-3 gap-4 text-sm">
                     <div>
                       <div className="text-gray-400">Sets</div>
-                      <div className="font-semibold text-[#FF6B35]">{exercise.sets}</div>
+                      <div className="font-semibold text-[##ff3535]">{exercise.sets}</div>
                     </div>
                     <div>
                       <div className="text-gray-400">Duration</div>
-                      <div className="font-semibold text-[#FF6B35]">{exercise.reps}</div>
+                      <div className="font-semibold text-[#ff3535]">{exercise.reps}</div>
                     </div>
                     <div>
                       <div className="text-gray-400">Rest</div>
-                      <div className="font-semibold text-[#FF6B35]">{exercise.rest}</div>
+                      <div className="font-semibold text-[#ff3535]">{exercise.rest}</div>
                     </div>
                   </div>
                 </motion.div>
@@ -251,7 +251,7 @@ Progression: ${workoutPlan.trainerNotes.progression}
           className="glass-card p-6 rounded-2xl mb-8"
         >
           <div className="flex items-center gap-3 mb-6">
-            <div className="bg-gradient-to-br from-yellow-500 to-orange-500 p-3 rounded-xl">
+            <div className="bg-gradient-to-br from-yellow-500 to-red-500 p-3 rounded-xl">
               <Lightbulb className="w-6 h-6 text-white" />
             </div>
             <h2 className="text-2xl font-bold">Trainer Notes</h2>
@@ -259,19 +259,19 @@ Progression: ${workoutPlan.trainerNotes.progression}
 
           <div className="grid md:grid-cols-3 gap-6">
             <div>
-              <h3 className="font-semibold text-lg mb-2 text-[#FF6B35]">Nutrition</h3>
+              <h3 className="font-semibold text-lg mb-2 text-[#ff3535]">Nutrition</h3>
               <p className="text-gray-400 text-sm leading-relaxed">
                 {workoutPlan.trainerNotes.nutrition}
               </p>
             </div>
             <div>
-              <h3 className="font-semibold text-lg mb-2 text-[#FF6B35]">Recovery</h3>
+              <h3 className="font-semibold text-lg mb-2 text-[#ff3535]">Recovery</h3>
               <p className="text-gray-400 text-sm leading-relaxed">
                 {workoutPlan.trainerNotes.recovery}
               </p>
             </div>
             <div>
-              <h3 className="font-semibold text-lg mb-2 text-[#FF6B35]">Progression</h3>
+              <h3 className="font-semibold text-lg mb-2 text-[#ff3535]">Progression</h3>
               <p className="text-gray-400 text-sm leading-relaxed">
                 {workoutPlan.trainerNotes.progression}
               </p>

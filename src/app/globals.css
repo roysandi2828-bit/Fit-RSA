@@ -22,14 +22,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .gradient-text {
-  background: linear-gradient(to right, #FF6B35, #FF8C42);
+  background: linear-gradient(to right, #ff3535, #ff4242);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
 .btn-primary {
-  background-color: #FF6B35;
+  background-color: #ff3535;
   color: white;
   font-weight: 600;
   padding: 1rem 2rem;
@@ -38,9 +38,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-primary:hover {
-  background-color: #FF8C42;
+  background-color: #ff4242;
   transform: scale(1.05);
-  box-shadow: 0 10px 25px rgba(255, 107, 53, 0.5);
+  box-shadow: 0 10px 25px rgba(255, 53, 53, 0.5);
 }
 
 .btn-secondary {
@@ -70,10 +70,10 @@ h1, h2, h3, h4, h5, h6 {
 
 @keyframes pulse-glow {
   0%, 100% {
-    box-shadow: 0 0 20px rgba(255, 107, 53, 0.5);
+    box-shadow: 0 0 20px rgba(255, 53, 53, 0.5);
   }
   50% {
-    box-shadow: 0 0 40px rgba(255, 107, 53, 0.8);
+    box-shadow: 0 0 40px rgba(255, 53, 53, 0.8);
   }
 }
 
@@ -112,12 +112,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #FF6B35;
+  background: #ff3535;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #FF8C42;
+  background: #ff4242;
 }
 
 /* Input Styling */

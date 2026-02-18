@@ -15,11 +15,11 @@ export default function Footer() {
             viewport={{ once: true }}
           >
             <div className="flex items-center gap-3 mb-4">
-              <div className="bg-gradient-to-br from-[#FF6B35] to-[#FF8C42] p-2 rounded-xl">
+              <div className="bg-gradient-to-br from-[#ff3535] to-[#FF8C42] p-2 rounded-xl">
                 <Dumbbell className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-bold gradient-text">Fit-R.S.A</h3>
+                <h3 className="text-xl font-bold gradient-text">Fit-RSA</h3>
                 <p className="text-xs text-gray-400">Personal Workout Generator</p>
               </div>
             </div>
@@ -38,22 +38,22 @@ export default function Footer() {
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#home" className="text-gray-400 hover:text-[#FF6B35] transition-colors text-sm">
+                <a href="#home" className="text-gray-400 hover:text-[#ff3535] transition-colors text-sm">
                   Home
                 </a>
               </li>
               <li>
-                <a href="#features" className="text-gray-400 hover:text-[#FF6B35] transition-colors text-sm">
+                <a href="#features" className="text-gray-400 hover:text-[#ff3535] transition-colors text-sm">
                   Features
                 </a>
               </li>
               <li>
-                <a href="#trainers" className="text-gray-400 hover:text-[#FF6B35] transition-colors text-sm">
+                <a href="#trainers" className="text-gray-400 hover:text-[#ff3535] transition-colors text-sm">
                   Trainers
                 </a>
               </li>
               <li>
-                <a href="#about" className="text-gray-400 hover:text-[#FF6B35] transition-colors text-sm">
+                <a href="#about" className="text-gray-400 hover:text-[#ff3535] transition-colors text-sm">
                   About
                 </a>
               </li>
@@ -114,9 +114,9 @@ export default function Footer() {
           </p>
           <div className="flex items-center gap-2 text-sm text-gray-400">
             <span>Created with</span>
-            <Heart className="w-4 h-4 text-[#FF6B35] fill-[#FF6B35]" />
+            <Heart className="w-4 h-4 text-[#FF6B35] fill-[#ff3535]" />
             <span>by</span>
-            <span className="font-semibold text-[#FF6B35]">Roy Sandi Andrian</span>
+            <span className="font-semibold text-[#ff3535]">Roy Sandi Andrian</span>
           </div>
         </motion.div>
       </div>

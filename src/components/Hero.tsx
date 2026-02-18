@@ -39,8 +39,8 @@ export default function Hero({ onGetStarted }: HeroProps) {
               transition={{ delay: 0.2 }}
               className="inline-flex items-center gap-2 glass-card px-4 py-2 rounded-full mb-6"
             >
-              <Sparkles className="w-4 h-4 text-[#FF6B35]" />
-              <span className="text-sm text-gray-300">AI-Powered Workout Plans</span>
+              <Sparkles className="w-4 h-4 text-[#ff3535]" />
+              <span className="text-sm text-gray-300">Workout Plans</span>
             </motion.div>
 
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
@@ -120,7 +120,7 @@ export default function Hero({ onGetStarted }: HeroProps) {
               className="glass-card p-8 rounded-3xl"
             >
               <div className="flex items-center gap-3 mb-6">
-                <div className="bg-gradient-to-br from-[#FF6B35] to-[#FF8C42] p-3 rounded-xl">
+                <div className="bg-gradient-to-br from-[#ff3535] to-[#FF8C42] p-3 rounded-xl">
                   <TrendingUp className="w-6 h-6 text-white" />
                 </div>
                 <div>
@@ -133,14 +133,14 @@ export default function Hero({ onGetStarted }: HeroProps) {
                 <div>
                   <div className="flex justify-between mb-2">
                     <span className="text-sm text-gray-400">Strength</span>
-                    <span className="text-sm font-semibold text-[#FF6B35]">85%</span>
+                    <span className="text-sm font-semibold text-[#ffffff]">85%</span>
                   </div>
                   <div className="h-2 bg-white/10 rounded-full overflow-hidden">
                     <motion.div
                       initial={{ width: 0 }}
                       animate={{ width: "85%" }}
                       transition={{ duration: 1.5, delay: 0.5 }}
-                      className="h-full bg-gradient-to-r from-[#FF6B35] to-[#FF8C42]"
+                      className="h-full bg-gradient-to-r from-[#e0baba] to-[#3549ff]"
                     />
                   </div>
                 </div>
@@ -148,14 +148,14 @@ export default function Hero({ onGetStarted }: HeroProps) {
                 <div>
                   <div className="flex justify-between mb-2">
                     <span className="text-sm text-gray-400">Cardio</span>
-                    <span className="text-sm font-semibold text-[#FF6B35]">72%</span>
+                    <span className="text-sm font-semibold text-[#ffffff]">72%</span>
                   </div>
                   <div className="h-2 bg-white/10 rounded-full overflow-hidden">
                     <motion.div
                       initial={{ width: 0 }}
                       animate={{ width: "72%" }}
                       transition={{ duration: 1.5, delay: 0.7 }}
-                      className="h-full bg-gradient-to-r from-[#FF6B35] to-[#FF8C42]"
+                      className="h-full bg-gradient-to-r from-[#e0baba] to-[#38ff35]"
                     />
                   </div>
                 </div>
@@ -163,14 +163,14 @@ export default function Hero({ onGetStarted }: HeroProps) {
                 <div>
                   <div className="flex justify-between mb-2">
                     <span className="text-sm text-gray-400">Flexibility</span>
-                    <span className="text-sm font-semibold text-[#FF6B35]">68%</span>
+                    <span className="text-sm font-semibold text-[#ffffff]">68%</span>
                   </div>
                   <div className="h-2 bg-white/10 rounded-full overflow-hidden">
                     <motion.div
                       initial={{ width: 0 }}
                       animate={{ width: "68%" }}
                       transition={{ duration: 1.5, delay: 0.9 }}
-                      className="h-full bg-gradient-to-r from-[#FF6B35] to-[#FF8C42]"
+                      className="h-full bg-gradient-to-r from-[#e0baba] to-[#ff3535]"
                     />
                   </div>
                 </div>
@@ -179,7 +179,7 @@ export default function Hero({ onGetStarted }: HeroProps) {
               <div className="mt-6 pt-6 border-t border-white/10">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2">
-                    <Zap className="w-5 h-5 text-[#FF6B35]" />
+                    <Zap className="w-5 h-5 text-[#ff3535]" />
                     <span className="text-sm text-gray-400">Weekly Goal</span>
                   </div>
                   <span className="font-bold text-lg">4/5 Days</span>
@@ -191,12 +191,12 @@ export default function Hero({ onGetStarted }: HeroProps) {
             <motion.div
               animate={{ rotate: 360 }}
               transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-              className="absolute -top-10 -right-10 w-32 h-32 bg-gradient-to-br from-[#FF6B35]/20 to-[#FF8C42]/20 rounded-full blur-3xl"
+              className="absolute -top-10 -right-10 w-32 h-32 bg-gradient-to-br from-[#ff3535]/20 to-[#FF8C42]/20 rounded-full blur-3xl"
             />
             <motion.div
               animate={{ rotate: -360 }}
               transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
-              className="absolute -bottom-10 -left-10 w-40 h-40 bg-gradient-to-br from-[#FF6B35]/20 to-[#FF8C42]/20 rounded-full blur-3xl"
+              className="absolute -bottom-10 -left-10 w-40 h-40 bg-gradient-to-br from-[#ff3535]/20 to-[#FF8C42]/20 rounded-full blur-3xl"
             />
           </motion.div>
         </div>
@@ -214,7 +214,7 @@ export default function Hero({ onGetStarted }: HeroProps) {
           transition={{ duration: 2, repeat: Infinity }}
           className="w-6 h-10 border-2 border-white/30 rounded-full flex items-start justify-center p-2"
         >
-          <motion.div className="w-1 h-2 bg-[#FF6B35] rounded-full" />
+          <motion.div className="w-1 h-2 bg-[#ff3535] rounded-full" />
         </motion.div>
       </motion.div>
     </section>

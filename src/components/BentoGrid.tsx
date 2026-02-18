@@ -115,7 +115,7 @@ export default function BentoGrid() {
                   Stay motivated with badges and milestones as you progress.
                 </p>
               </div>
-              <div className="bg-gradient-to-br from-yellow-500 to-orange-500 p-3 rounded-xl">
+              <div className="bg-gradient-to-br from-yellow-500 to-red-500 p-3 rounded-xl">
                 <Trophy className="w-6 h-6 text-white" />
               </div>
             </div>
@@ -123,7 +123,7 @@ export default function BentoGrid() {
             {/* Mock Badges */}
             <div className="flex gap-4">
               {[
-                { color: "from-yellow-500 to-orange-500", label: "7 Day Streak" },
+                { color: "from-yellow-500 to-red-500", label: "7 Day Streak" },
                 { color: "from-purple-500 to-pink-500", label: "First Workout" },
                 { color: "from-green-500 to-emerald-500", label: "Goal Crusher" },
                 { color: "from-blue-500 to-cyan-500", label: "Consistency King" },

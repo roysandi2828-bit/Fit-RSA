@@ -20,7 +20,7 @@ const workoutTypes = [
     icon: Flame,
     title: "HIIT Sessions",
     description: "Maximize fat burn with high-intensity interval training protocols.",
-    color: "from-orange-500 to-yellow-500",
+    color: "from-orange-500 to-red-500",
   },
   {
     icon: Zap,

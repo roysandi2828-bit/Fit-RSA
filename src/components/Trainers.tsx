@@ -46,7 +46,7 @@ export default function Trainers() {
   return (
     <section id="trainers" className="py-20 relative overflow-hidden">
       {/* Background Decoration */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#FF6B35]/5 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#ff3535]/5 to-transparent" />
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
@@ -63,7 +63,7 @@ export default function Trainers() {
             viewport={{ once: true }}
             className="inline-block glass-card px-4 py-2 rounded-full mb-4"
           >
-            <span className="text-sm text-[#FF6B35] font-semibold">Expert Team</span>
+            <span className="text-sm text-[#ff3535] font-semibold">Expert Team</span>
           </motion.div>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Meet Our
@@ -106,10 +106,10 @@ export default function Trainers() {
 
               {/* Content */}
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-1 group-hover:text-[#FF6B35] transition-colors">
+                <h3 className="text-xl font-bold mb-1 group-hover:text-[#ff3535] transition-colors">
                   {trainer.name}
                 </h3>
-                <p className="text-[#FF6B35] text-sm font-semibold mb-4">
+                <p className="text-[#ff3535] text-sm font-semibold mb-4">
                   {trainer.specialty}
                 </p>
 
@@ -129,7 +129,7 @@ export default function Trainers() {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="w-full mt-4 bg-white/5 hover:bg-[#FF6B35] text-white font-semibold py-2 rounded-lg transition-all duration-300"
+                  className="w-full mt-4 bg-white/5 hover:bg-[#ff3535] text-white font-semibold py-2 rounded-lg transition-all duration-300"
                 >
                   View Profile
                 </motion.button>
